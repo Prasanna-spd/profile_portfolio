@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import PropTypes from "prop-types";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
@@ -13,39 +14,24 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             Prasanna<span className="text-blue-500">.S P D</span>{" "}
           </a>
 
-          <div
-            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
-            onClick={() => setMenuOpen((prev) => !prev)}
-          >
+          <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen((prev) => !prev)}>
             &#9776;
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#home"
-              className="text-gray-300 hove:text-white transition-colors"
-            >
+            <a href="#home" className="text-gray-300 hove:text-white transition-colors">
               {" "}
               Home
             </a>
-            <a
-              href="#about"
-              className="text-gray-300 hove:text-white transition-colors"
-            >
+            <a href="#about" className="text-gray-300 hove:text-white transition-colors">
               {" "}
               About{" "}
             </a>
-            <a
-              href="#projects"
-              className="text-gray-300 hove:text-white transition-colors"
-            >
+            <a href="#projects" className="text-gray-300 hove:text-white transition-colors">
               {" "}
               Projects{" "}
             </a>
-            <a
-              href="#contact"
-              className="text-gray-300 hove:text-white transition-colors"
-            >
+            <a href="#contact" className="text-gray-300 hove:text-white transition-colors">
               {" "}
               Contact{" "}
             </a>
@@ -54,4 +40,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       </div>
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  menuOpen: PropTypes.bool.isRequired,
+  setMenuOpen: PropTypes.func.isRequired,
 };
