@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
+    useremail: "",
     message: "",
   });
 
@@ -20,8 +20,9 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
+        console.log(result)
         alert("Message Sent!");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", useremail: "", message: "" });
       })
       .catch(() => alert("Oops! Something went wrong. Please try again."));
   };
@@ -57,13 +58,13 @@ export const Contact = () => {
               <input
                 type="email"
                 id="email"
-                name="email"
+                name="useremail"
                 required
-                value={formData.email}
+                value={formData.useremail}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="example@gmail.com"
                 onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
+                  setFormData({ ...formData, useremail: e.target.value })
                 }
               />
             </div>
