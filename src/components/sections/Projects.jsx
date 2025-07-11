@@ -18,7 +18,7 @@ export const Projects = () => {
                 {/* Proj Desc */}
                 <div className="text-xl font-semibold">Dominoza</div>
                 <div className="font-normal pt-2">A Full Stack food ordering platform to list your foods and grow business and Great place for food savours to order and get it at their doorstep.</div>
-                <div className="flex space-x-4 p-3 opacity-0 transition-all ease-in duration-100 group-hover:opacity-100">
+                <div className="flex space-x-4 p-3 opacity:100 md:opacity-0 transition-all ease-in duration-100 group-hover:opacity-100">
                   <a rel="stylesheet" href="https://github.com/Prasanna-spd/Dominoza">
                     <VscGithub className="text-4xl" />
                   </a>
@@ -48,7 +48,7 @@ export const Projects = () => {
                 {/* Proj Desc */}
                 <div className="text-xl font-semibold">Web Genie</div>
                 <div className="font-normal pt-2">A AI powered website builder where u can built ur dream website . Choose from a wide varity of templates and go live.</div>
-                <div className="flex space-x-4 p-3 opacity-0 transition-all ease-in duration-100 group-hover:opacity-100">
+                <div className="flex space-x-4 p-3 opacity:100 md:opacity-0 transition-all ease-in duration-100 group-hover:opacity-100">
                   <a rel="stylesheet" href="https://github.com/Prasanna-spd/WebGenie">
                     <VscGithub className="text-4xl" />
                   </a>
@@ -78,7 +78,7 @@ export const Projects = () => {
                 {/* Proj Desc */}
                 <div className="text-xl font-semibold">What&apos;s Up</div>
                 <div className="font-normal pt-2">A Real-Time messaging platform where u can connect with ur friends and start talking. A complete solution for your communication.</div>
-                <div className="flex space-x-4 p-3 opacity-0 transition-all ease-in duration-100 group-hover:opacity-100">
+                <div className="flex space-x-4 p-3 opacity:100 md:opacity-0 transition-all ease-in duration-100 group-hover:opacity-100">
                   <a rel="stylesheet" href="https://github.com/Prasanna-spd/mern-chat-app">
                     <VscGithub className="text-4xl" />
                   </a>
