@@ -108,7 +108,7 @@ export const Projects = () => {
                 {/* Proj Desc */}
                 <div className="text-xl font-semibold">VImage Solutions</div>
                 <div className="font-normal pt-2">An AI powered post generator for instagram, twitter, etc and video compressor which uses Cloudinary&apos;s inbuilt optimisations.</div>
-                <div className="flex space-x-4 p-3 opacity-0 transition-all ease-in duration-100 group-hover:opacity-100">
+                <div className="flex space-x-4 p-3 opacity:100 md:opacity-0 transition-all ease-in duration-100 group-hover:opacity-100">
                   <a rel="stylesheet" href="https://github.com/Prasanna-spd/Vimage-solutions">
                     <VscGithub className="text-4xl" />
                   </a>
